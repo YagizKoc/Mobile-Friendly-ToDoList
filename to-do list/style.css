@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --Brown: #6C3428;
+    --softBrown: #BA704F;
+    --softYellow: #DFA878;
+    --softBlue: #CEE6F3;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--softBlue);
+    padding: 5rem;
+}
+
+.to-do-app{
+    background-color: var(--softYellow);
+    display: flex;
+    flex-direction: column ;
+    width: 70%;
+    /* justify-content: center; */
+    margin: auto auto auto;
+    padding: auto auto auto;
+    border-radius: 10px;
+}
+
+@media(width < 700px){
+    .container{
+        padding: 0rem;
+        padding-top: 1rem;
+       
+    }
+    .to-do-app{
+        width: 100%;
+        
+    }
+}
+
+@media(width < 500px){
+    body{
+        font-size: 10px;
+    }
+}
+@media(width < 350){
+    .to-do-app{
+        width: 80%;
+    }
+   
+}
+
+h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.main{
+    display: flex;
+
+}
+
+@media(width < 1024px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        margin: auto;
+    }
+}
+
+.column{
+    
+    padding: 2rem;
+    justify-content: space-between;
+    
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: var(--Brown);
+    color: var(--softBlue);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.tasks{
+    display: flex;
+    margin-left: 5rem;
+    /* background-color: var(--softYellow); */
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 15px;
+    margin-right: auto;
+}
+
+.list-container{
+    justify-content: center;
+    padding: 1rem;
+    
+    
+    
+    
+    
+}
+
+ul{
+    list-style-position: inside;
+    
+}
+
+ul li span {
+    padding-left: 0.5rem;
+    line-height: 40px;
+    
+}
+
+li{
+    white-space: nowrap;
+    list-style-position: inside;
+    width:100%;
+    overflow:hidden;
+    display: inline-block
+    
+
+}
+
